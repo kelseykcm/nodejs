@@ -1,0 +1,8 @@
+var M_Multi = require("./multi")
+var D_Div = require("./div")
+var S_Somar = require("./soma")
+var S_sub = require("./sub")
+console.log(M_Multi(2,4))
+console.log(D_Div(4,2))
+console.log(S_Somar(4,12))
+console.log(S_sub(20,10))

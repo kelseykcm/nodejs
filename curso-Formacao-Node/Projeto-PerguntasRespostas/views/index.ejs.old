@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Plataforma de perguntas e resposta</title>
+</head>
+<body>
+    <h1>Guia perguntas : </h1>
+    <hr>
+    <h1>Lista de perguntas</h1>
+
+    <p> Nome : <%= Autor %></p>
+    <p> Linguagem : <%= lang %></p>
+    <p> Empresa : <%= empresa %></p>
+    <p> Quantidade funcionarios : <%= funcionarios %></p>
+
+    <% if (msg == true){%>
+        <h1>mensagem de erro !!</h1>
+    <%} else {%>
+        <h1> nenhum erro</h1>
+    <%}%>
+
+    <% produtos.forEach(function(produto) {%>
+        <% produto.nome %>
+        <% produto.preco %>
+    <% })%>
+</body>
+</html>
